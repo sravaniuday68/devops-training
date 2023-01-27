@@ -1,1 +1,27 @@
 This is my first pull request
+Remote is central clearing House where all the code is stored for any project.
+git remote : ->  Whenever user is trying to push or pull changes he needs to have proper remote configuration done in local.
+
+If want to push specific branches changes to specific github account, thats where remote concept is used for having proper remote configured.
+
+git push -> git will get confused where to push my changes on which account or branch.
+
+
+Alais -> shortname for any github url for easily push and pull code changes instead giving complete url everytime.
+eg : origin -> git@github.com:devopscloudtrainer2022/devops-training.git
+     Upstream  -> git@github.com:devopscloudtrainer2023/devops-training.git
+     downstream -> git@github.com:devopscloudtrainer2021/devops-training.git
+
+syntax : git remote add alais_name <URL>
+
+git remote -v
+git remote add upstream git@github.com:devopscloudtrainer2023/devops-training.git
+git remote remove upstream git@github.com:devopscloudtrainer2023/devops-training.git
+git remote update origin upstream
+
+
+eg: git push origin branch_name
+    git push upstream branch_name
+
+eg : git pull origin branch_name
+     git pull upstream branch_name
